@@ -382,57 +382,55 @@
     </div>
 
     <div class="_backdrop _is-hidden" data-modal>
-        <div class="order__modal">
-            <form class="js-form" id="modal-form">
-                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-
-                <div class="input-container flexbox">
-
-                    <label for="name" class="label-form-titles">Имя</label>
-                    <div class="input-icon-container">
-                        <input class="modalform-input" type="text" name="name" id="name" />
-                        <svg class="icon forms">
-                            <use href="./images/icons/sprite.svg#form-name-person"> </use>
-                        </svg>cvc
-                    </div>
-
-                    <label for="tel-number" class="label-form-titles">Телефон</label>
-                    <div class="input-icon-container">
-                        <input class="modalform-input" type="tel" name="tel-number" id="tel-number" />
-                        <svg class="icon">
-                            <use href="./images/icons/sprite.svg#form-phone"> </use>
-                        </svg>
-                    </div>
-
-                    <label for="mail" class="label-form-titles">Почта</label>
-                    <div class="input-icon-container">
-                        <input class="modalform-input" type="email" name="mail" id="mail" />
-                        <svg class="icon">
-                            <use href="./images/icons/sprite.svg#form-email"> </use>
-                        </svg>
-                    </div>
-
-                    <label for="comment" class="label-form-titles">Комментарий</label>
-                    <textarea class="modalform-comment" name="comment" id="comment" rows="7"
-                        placeholder="Введите текст"></textarea>
-
-                    <label for="checkbox" class="label-checkbox"><input type="checkbox"
-                            class="checkbox visually-hidden" id="checkbox" />
-                        <span class="label-checkbox-title">Соглашаюсь с рассылкой и
-                            принимаю</span> <a href="/" class="link"> Условия
-                            договора</a>
-
+        <div class="modal__order">
+            <div class="modal_container">
+                <form class="modal__form form">
+                    <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <label class="form__field">
+                        <input type="text" class="form__input" name="name" placeholder=" "/>
+                        <span class="form__label">Имя</span>
+                        <span class="form__icon">
+                            <svg class="field-icon" width="16" height="15">
+                                <use href="./images/icons/sprite.svg#form-name-person"> </use>
+                            </svg>
+                        </span>
                     </label>
-                </div>
-                <button type="submit" class="modal-submit">Отправить</button>
-            </form>
-           <button type="button" class="btn-close _d-flex" data-modal-close>
+                    <label class="form__field">
+                        <input type="mail" class="form__input" name="email" placeholder=" "/>
+                        <span class="form__label">Телефон</span>
+                        <span class="form__icon">
+                            <svg class="field-icon" width="16" height="15">
+                                <use href="./images/icons/sprite.svg#form-name-person"> </use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="form__field">
+                        <input type="tel" class="form__input" name="phone" placeholder=" "/>
+                        <span class="form__label">Почта</span>
+                        <span class="form__icon">
+                            <svg class="field-icon" width="16" height="15">
+                                <use href="./images/icons/sprite.svg#form-name-person"> </use>
+                            </svg>
+                        </span>
+                    </label>
+                    <button type="submit" class="form__submit-btn">Отправить</button>  
+                </form>
+
+            </div>
+
+
+
+
+            
+           
+            <button type="button" class="btn-close _d-flex" data-modal-close>
                 <svg class="icon"  width="11" height="11">
                     <use xlink:href="./images/control/controls.svg#close"></use>
                 </svg>
-            </button>                      
+            </button>                        
+
         </div>
-    </div>
+    </div> 
 
 <script src="./js/script.js"></script>
 </body>
