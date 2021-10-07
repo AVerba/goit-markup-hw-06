@@ -49,18 +49,6 @@
                     <button type="button" class="banner__order-btn" data-modal-open><span>Заказать услугу</span></button>           
                 </div>
             </section>
-            <div class="_backdrop _is-hidden" data-modal>
-                <div class="order__modal">
-                    <h4 class="modal__title">Оставьте свои данные, мы вам перезвоним</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae deleniti eum modi molestias sit hic pariatur at beatae debitis.</p>
-                    <button type="button" class="btn-close _d-flex" data-modal-close>
-                        <svg class="icon"  width="11" height="11">
-                            <use xlink:href="./images/control/controls.svg#close"></use>
-                        </svg>
-                    </button>                        
-
-                </div>
-            </div> 
             <section class="page__respons respons section">                
                 <div class="container">
                     <h2 class="respons__title visually-hidden">Работая с нами, вы получаете</h2>
@@ -392,6 +380,60 @@
             </div>            
         </footer>
     </div>
-    <script src="./js/script.js"></script>
+
+    <div class="_backdrop _is-hidden" data-modal>
+        <div class="order__modal">
+            <form class="js-form" id="modal-form">
+                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+                <div class="input-container flexbox">
+
+                    <label for="name" class="label-form-titles">Имя</label>
+                    <div class="input-icon-container">
+                        <input class="modalform-input" type="text" name="name" id="name" />
+                        <svg class="icon forms">
+                            <use href="./images/icons/sprite.svg#form-name-person"> </use>
+                        </svg>cvc
+                    </div>
+
+                    <label for="tel-number" class="label-form-titles">Телефон</label>
+                    <div class="input-icon-container">
+                        <input class="modalform-input" type="tel" name="tel-number" id="tel-number" />
+                        <svg class="icon">
+                            <use href="./images/icons/sprite.svg#form-phone"> </use>
+                        </svg>
+                    </div>
+
+                    <label for="mail" class="label-form-titles">Почта</label>
+                    <div class="input-icon-container">
+                        <input class="modalform-input" type="email" name="mail" id="mail" />
+                        <svg class="icon">
+                            <use href="./images/icons/sprite.svg#form-email"> </use>
+                        </svg>
+                    </div>
+
+                    <label for="comment" class="label-form-titles">Комментарий</label>
+                    <textarea class="modalform-comment" name="comment" id="comment" rows="7"
+                        placeholder="Введите текст"></textarea>
+
+                    <label for="checkbox" class="label-checkbox"><input type="checkbox"
+                            class="checkbox visually-hidden" id="checkbox" />
+                        <span class="label-checkbox-title">Соглашаюсь с рассылкой и
+                            принимаю</span> <a href="/" class="link"> Условия
+                            договора</a>
+
+                    </label>
+                </div>
+                <button type="submit" class="modal-submit">Отправить</button>
+            </form>
+           <button type="button" class="btn-close _d-flex" data-modal-close>
+                <svg class="icon"  width="11" height="11">
+                    <use xlink:href="./images/control/controls.svg#close"></use>
+                </svg>
+            </button>                      
+        </div>
+    </div>
+
+<script src="./js/script.js"></script>
 </body>
 </html>
