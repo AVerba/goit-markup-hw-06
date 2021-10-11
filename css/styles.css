@@ -601,7 +601,7 @@ h3 {
 .clients__item:hover svg {
   fill: var(--action-color);
 }
-.clients__item:first-child .clients__link {
+/* .clients__item:first-child .clients__link {
   padding: 22px 63px;
 }
 .clients__item:nth-child(2) .clients__link {
@@ -618,7 +618,7 @@ h3 {
 }
 .clients__item:last-child .clients__link {
   padding: 22px 37px;
-}
+} */
 
 /*=========FOOTER===========*/
 .footer {
