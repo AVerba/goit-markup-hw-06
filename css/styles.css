@@ -431,6 +431,9 @@ h3 {
   margin-top: 29px;
   cursor: pointer;
 }
+.form__submit-btn:disabled {
+  background-color: #757575;
+}
 .btn-close {
   position: absolute;
   top: 7px;
@@ -725,7 +728,7 @@ h3 {
 .f-form__icon {
   color: #ffff;
 }
-.f-form__icon .d {
+.f-form__icon .btn-icon {
   fill: currentColor;
 }
 

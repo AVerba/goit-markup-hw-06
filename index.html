@@ -376,9 +376,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__form f-form">
+                    <div class="footer__form">
                         <h3 class="f-form__title">Подпишитесь на рассылку</h3>
-                        <form action="" class="_d-flex">
+                        <form action="#" class="f-form _d-flex">
                             <label class="form__field">
                                 <input type="mail" class="  f-input" name="mail" placeholder="E-mail"/>
                                 <!-- <span class="form__label">Подпишитесь на рассылку</span> -->
@@ -386,14 +386,12 @@
                             <button type="submit" class=" button f-form__btn">                             
                                 <span>Подписаться</span>
                                 <span class="f-form__icon _d-flex">
-                                    <svg class="d" width="24" height="24">
-                                        <use href="./images/send.svg#send"> </use>
+                                    <svg class="btn-icon" width="24" height="24">
+                                        <use href="./images/send.svg#send"></use>
                                     </svg>
                                 </span>
                             </button>
-                        </form>
-
-                         
+                        </form>                         
                     </div>
                 </div>
             </div>            
@@ -408,7 +406,7 @@
                     <ul class="form__list">
                         <li class="form__item">
                             <label class="form__field">
-                                <input type="text" class="form__input" name="name" placeholder=" "/>
+                                <input type="text" class="form__input" name="name" placeholder=" " autocomplete="off"/>
                                 <span class="form__label">Имя</span>
                                 <span class="form__icon">
                                     <svg class="field-icon" width="18" height="18">
@@ -419,7 +417,7 @@
                         </li>
                         <li class="form__item">
                             <label class="form__field">
-                                <input type="mail" class="form__input" name="email" placeholder=" "/>
+                                <input type="tel" class="form__input" name="tel" placeholder=" " autocomplete="off"/>
                                 <span class="form__label">Телефон</span>
                                 <span class="form__icon">
                                     <svg class="field-icon" width="18" height="18">
@@ -430,7 +428,7 @@
                         </li>
                         <li class="form__item">
                             <label class="form__field">
-                                <input type="tel" class="form__input" name="phone" placeholder=" "/>
+                                <input type="email" class="form__input" name="email" placeholder=" " autocomplete="off"/>
                                 <span class="form__label">Почта</span>
                                 <span class="form__icon">
                                     <svg class="field-icon" width="18" height="18">
@@ -454,7 +452,7 @@
                             </label>
                         </li>
                     </ul>
-                    <button type="submit" class="button form__submit-btn">Отправить</button>
+                    <button type="submit" class="button form__submit-btn" disabled data-modal-close>Отправить</button>
                 </form>
             </div>           
             <button type="button" class="btn-close _d-flex" data-modal-close>
@@ -464,7 +462,6 @@
             </button>                      
         </div>
     </div> 
-
 <script src="./js/script.js"></script>
 </body>
 </html>
